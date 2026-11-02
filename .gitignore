@@ -1,0 +1,20 @@
+# Defense in depth only. Real project inputs and outputs belong OUTSIDE this repo.
+# Ignore patterns do not protect tracked files or prevent external uploads.
+private/
+local-data/
+project-knowledge/
+raw-inputs/
+outputs/
+reports/
+logs/
+screenshots/
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+.DS_Store
+__pycache__/
