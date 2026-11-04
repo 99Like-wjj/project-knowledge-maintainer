@@ -4,7 +4,7 @@
 <rect width="1200" height="620" rx="24" fill="#0c1930"/>
 <g font-family="Noto Sans CJK SC, sans-serif" fill="#edf7ff">
 <text x="50" y="58" font-size="30" font-weight="700">AI 判断业务，工具维护结构，知识独立复用</text>
-<text x="50" y="94" font-size="17" fill="#afc7df">维护端 0.1.0-dev.3 · 项目知识库 · Ego v0.1.9 开发协作</text>
+<text x="50" y="94" font-size="17" fill="#afc7df">维护端 0.1.0 · 项目知识库 · Ego v0.1.9 协作</text>
 <g stroke="#355c80" stroke-width="2" fill="#142b46"><rect x="45" y="145" width="310" height="245" rx="18"/><rect x="445" y="145" width="310" height="245" rx="18"/><rect x="845" y="145" width="310" height="245" rx="18"/></g>
 <g font-size="22" font-weight="700"><text x="70" y="185">知识库维护 Skill</text><text x="470" y="185">项目知识库</text><text x="870" y="185">Ego 测试 Skill</text></g>
 <g font-size="17" fill="#c7dded">

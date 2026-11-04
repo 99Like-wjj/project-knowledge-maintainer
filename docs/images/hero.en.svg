@@ -18,7 +18,7 @@
 <text x="835" y="332" font-size="16" fill="#61e6ed" font-weight="700">03  TEST CONTEXT</text>
 <text x="835" y="370" font-size="23" fill="#f1f5ff" font-weight="400">Ego reads directly</text>
 <text x="835" y="403" font-size="17" fill="#9cacc8" font-weight="400">No query proxy in this Skill</text>
-<text x="56" y="498" font-size="16" fill="#9cacc8" font-weight="400">0.1.0-dev.3  /  In development, not released  ·  Real knowledge and source material stay outside this repository</text>
+<text x="56" y="498" font-size="16" fill="#9cacc8" font-weight="400">0.1.0  /  Stable release  ·  Real knowledge and source material stay outside this repository</text>
 </g>
 <g stroke="#61e6ed" stroke-width="2" fill="none" marker-end="url(#arrow)"><path d="M355,370 L420,370"/><path d="M755,370 L800,370"/></g>
 </svg>

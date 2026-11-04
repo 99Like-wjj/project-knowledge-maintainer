@@ -4,11 +4,11 @@
 
 <p align="center"><code>project-knowledge-maintainer</code></p>
 
-<p align="center"><strong>English</strong> · <a href="README.md">简体中文</a><br><a href="#development-usage">Development usage</a> · <a href="skills/project-knowledge-maintainer/SKILL.md">Skill guide</a> · <a href="docs/project-knowledge-lightweight-design.md">Knowledge structure</a> · <a href="skills/project-knowledge-maintainer/references/format-and-tools.md">Formats &amp; commands</a> · <a href="docs/development-validation.md">Validation status</a></p>
+<p align="center"><strong>English</strong> · <a href="README.md">简体中文</a><br><a href="#installation-and-development-usage">Installation and development usage</a> · <a href="skills/project-knowledge-maintainer/SKILL.md">Skill guide</a> · <a href="docs/project-knowledge-lightweight-design.md">Knowledge structure</a> · <a href="skills/project-knowledge-maintainer/references/format-and-tools.md">Formats &amp; commands</a> · <a href="docs/development-validation.md">Validation status</a></p>
 
 **An independent Skill for creating and maintaining project knowledge across projects.** AI organizes knowledge from authorized sources; tools initialize, validate, save, compare, and recover it. Consumers such as Ego read the independent knowledge store directly.
 
-> **Current local development version: 0.1.0-dev.3; knowledge format: v3.** Initialization, validation, incremental saves, recovery of prepared transactions, and local Git three-way comparison are implemented for four types of records. AI handles source organization and business judgment. Not formally released; see [development validation](docs/development-validation.md). Linked technical documents are currently in Chinese.
+> **Current stable version: 0.1.0; knowledge format: v3.** Initialization, validation, incremental saves, recovery of prepared transactions, and local Git three-way comparison are implemented for four types of records. AI handles source organization and business judgment. See [release validation](docs/v0.1.0-release-validation.md). Linked technical documents are currently in Chinese.
 
 ## Purpose
 
@@ -18,7 +18,7 @@ This project creates and maintains knowledge. Consumers such as Ego Lite read, q
 
 ## Working with Ego
 
-This project is the **creation and maintenance side**; [AI Autonomous Testing · Ego Lite](https://github.com/99Like-wjj/ai-autonomous-testing-ego-lite) is the **reading and testing side**. This repository is private and requires an authorized GitHub account. This development branch has not been merged or released.
+This project is the **creation and maintenance side**; [AI Autonomous Testing · Ego Lite](https://github.com/99Like-wjj/ai-autonomous-testing-ego-lite) is the **reading and testing side**. This repository is private and requires an authorized GitHub account.
 
 ![Maintenance Skill, independent knowledge store, and Ego collaboration (Chinese diagram)](docs/images/knowledge-collaboration.svg)
 
@@ -49,19 +49,19 @@ Read [AGENTS.md](AGENTS.md) before starting any work.
 - [Formats and local commands](skills/project-knowledge-maintainer/references/format-and-tools.md): requests, saving, and recovery.
 - [Development validation](docs/development-validation.md): actual validation results and limitations.
 
-## Development usage
+## Installation and development usage
 
 Requires Node.js >=22. Run `npm ci` and `npm run build` in this source repository. The CLI is at `.build/src/cli.mjs`. Users describe their goals and provide sources in natural language; AI prepares tool requests. Users do not need to hand-write JSON.
 
-See the format guide for initialization, validation, saving, three-way comparison, and recovery commands. Run `npm run typecheck`, `npm test`, `npm run check:public`, and `git diff --check` for development checks. There is currently no formal distribution, Tag, Release, or newly added license declaration.
+See the format guide for initialization, validation, saving, three-way comparison, and recovery commands. Run `npm run typecheck`, `npm test`, `npm run check:public`, and `git diff --check` for development checks. See [release and installation instructions](docs/releasing.md) and [CHANGELOG](CHANGELOG.md). No open-source license is declared.
 
 ## Versions and reading order
 
-The maintenance Skill's own version is **0.1.0-dev.3**, developed alongside Ego **v0.1.9**. The data contract version is **v3**. These are separate version identifiers. There is no formal installation package; do not treat a source build directory as an installation deliverable.
+The maintenance Skill's own version is **0.1.0**, developed alongside Ego **v0.1.9**. The data contract version is **v3**. These are separate version identifiers. Install the complete ZIP attached to the Release; the source Skill subdirectory alone is not a complete installation.
 
 | Development stage | Main change | Status |
 | --- | --- | --- |
-| 0.1.0-dev.3 / format v3 | Account and project configuration become lightweight records within the four record types | Current development version, awaiting human review |
+| 0.1.0 / format v3 | Account and project configuration become lightweight records within the four record types | Stable version |
 | 0.1.0-dev.2 / format v2 | Four-part knowledge layout and maintenance/reading contract | Historical design and validation records |
 | 0.1.0-dev.1 / format v1 | General topic knowledge, initialization, incremental maintenance, and three-way comparison | Historical design and validation records |
 

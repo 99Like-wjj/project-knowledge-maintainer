@@ -4,11 +4,11 @@
 
 <p align="center"><code>project-knowledge-maintainer</code></p>
 
-<p align="center"><a href="README.en.md">English</a> · <strong>简体中文</strong><br><a href="#开发使用">开发使用</a> · <a href="skills/project-knowledge-maintainer/SKILL.md">Skill 指南</a> · <a href="docs/project-knowledge-lightweight-design.md">知识结构</a> · <a href="skills/project-knowledge-maintainer/references/format-and-tools.md">格式与命令</a> · <a href="docs/development-validation.md">验证状态</a></p>
+<p align="center"><a href="README.en.md">English</a> · <strong>简体中文</strong><br><a href="#安装与开发使用">安装与开发使用</a> · <a href="skills/project-knowledge-maintainer/SKILL.md">Skill 指南</a> · <a href="docs/project-knowledge-lightweight-design.md">知识结构</a> · <a href="skills/project-knowledge-maintainer/references/format-and-tools.md">格式与命令</a> · <a href="docs/development-validation.md">验证状态</a></p>
 
 **独立、可跨项目复用的项目知识库创建与维护 Skill。** AI 从授权资料中整理项目知识，工具负责初始化、校验、保存、比较与恢复；Ego 等使用方直接读取独立的知识库。
 
-> **当前为本地开发版 0.1.0-dev.3，知识格式 v3。** 已实现四类资料的初始化、校验、增量保存、prepared 事务恢复及本地 Git 三方差异；AI 负责资料整理和业务判断。尚未正式发布；见[开发自测](docs/development-validation.md)。
+> **当前正式版本 0.1.0，知识格式 v3。** 已实现四类资料的初始化、校验、增量保存、prepared 事务恢复及本地 Git 三方差异；AI 负责资料整理和业务判断。验证记录见[正式版验证](docs/v0.1.0-release-validation.md)。
 
 ## 定位
 
@@ -18,7 +18,7 @@
 
 ## 与 Ego 配合使用
 
-本项目是 **创建与维护端**，[AI 自主自动化测试 · Ego Lite](https://github.com/99Like-wjj/ai-autonomous-testing-ego-lite) 是 **读取与测试端**。当前仓库为私有仓库，需要已获授权的 GitHub 账号访问；本开发分支尚未合并或发版。
+本项目是 **创建与维护端**，[AI 自主自动化测试 · Ego Lite](https://github.com/99Like-wjj/ai-autonomous-testing-ego-lite) 是 **读取与测试端**。当前仓库为私有仓库，需要已获授权的 GitHub 账号访问。
 
 ![维护端、独立知识资产与 Ego 的协作](docs/images/knowledge-collaboration.svg)
 
@@ -49,20 +49,20 @@
 - [格式与本地命令](skills/project-knowledge-maintainer/references/format-and-tools.md)：请求、保存与恢复方法。
 - [开发自测](docs/development-validation.md)：实际验证结果及限制。
 
-## 开发使用
+## 安装与开发使用
 
 Node.js >=22，在本源码仓库运行 npm ci、npm run build。CLI 位于本仓库的 .build/src/cli.mjs。用户以自然语言提供目标和资料，AI 准备工具请求，不需要用户手写 JSON。
 
-初始化、校验、保存、三方比较和恢复的命令见格式指南。自测运行 npm run typecheck、npm test、npm run check:public 和 git diff --check。当前没有正式分发、Tag、Release 或新增许可证声明。
+初始化、校验、保存、三方比较和恢复的命令见格式指南。自测运行 npm run typecheck、npm test、npm run check:public 和 git diff --check。完整安装包构建与安装方法见[发布说明](docs/releasing.md)，变更见[CHANGELOG](CHANGELOG.md)。本项目未声明开源许可证。
 
 
 ## 版本与阅读顺序
 
-维护 Skill 自身版本为 **0.1.0-dev.3**，与 Ego **v0.1.9** 配合开发；数据契约版本为 **v3**。三者不是同一个版本号。当前没有正式安装包，不要把源码构建目录当成安装交付。
+维护 Skill 自身版本为 **0.1.0**，与 Ego **v0.1.9** 配合开发；数据契约版本为 **v3**。三者不是同一个版本号。安装请使用 Release 附件中的完整 ZIP，不要仅复制源码 Skill 子目录。
 
 | 开发阶段 | 主要变化 | 状态 |
 | --- | --- | --- |
-| 0.1.0-dev.3 / 格式 v3 | 四类资料中的账号和项目配置改为轻量记录 | 当前开发版本，待人工审阅 |
+| 0.1.0 / 格式 v3 | 四类资料中的账号和项目配置改为轻量记录 | 正式版本 |
 | 0.1.0-dev.2 / 格式 v2 | 四类知识布局与维护、读取契约 | 历史设计与验证记录 |
 | 0.1.0-dev.1 / 格式 v1 | 通用主题知识、初始化、增量维护和三方差异 | 历史设计与验证记录 |
 

@@ -1,6 +1,6 @@
 # 项目知识库初始化与首次建库设计
 
-> **历史设计（v1 阶段）**：下文保留 2026-11-02 的设计背景，`topics/`、`scopes` 等不是当前 v3 文件布局。当前维护端为 0.1.0-dev.3，采用[轻量 v3 设计](project-knowledge-lightweight-design.md)、[运行指南](../skills/project-knowledge-maintainer/references/format-and-tools.md)及 [Schema](../schemas/project-knowledge.schema.json)。历史状态和验收目标不能当作当前发布或验证结论。
+> **历史设计（v1 阶段）**：下文保留 2026-11-02 的设计背景，`topics/`、`scopes` 等不是当前 v3 文件布局。当前维护端为 0.1.0，采用[轻量 v3 设计](project-knowledge-lightweight-design.md)、[运行指南](../skills/project-knowledge-maintainer/references/format-and-tools.md)及 [Schema](../schemas/project-knowledge.schema.json)。历史状态和验收目标不能当作当前发布或验证结论。
 
 ## 当前 v3 初始化行为
 

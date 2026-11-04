@@ -2,12 +2,12 @@
 name: project-knowledge-maintainer
 description: 创建和维护项目功能地图、通用规则，并将用户提供的非秘密账号和项目配置整理登记；保留知识来源及版本，功能细则留原需求，使用方独立检索。
 metadata:
-  version: "0.1.0-dev.3"
+  version: "0.1.0"
 ---
 
 # 项目知识创建与维护
 
-AI负责资料理解、知识提炼和业务判断，工具负责文件、结构、引用和版本事务。当前为本地开发版，格式v3；源码构建不等于安装或正式发布。
+AI负责资料理解、知识提炼和业务判断，工具负责文件、结构、引用和版本事务。当前正式版本为0.1.0，知识格式v3。
 
 ## 选择内容
 
@@ -31,7 +31,7 @@ AI负责资料理解、知识提炼和业务判断，工具负责文件、结构
 
 ## 工具与交付
 
-在已确认源码仓库运行npm run build，CLI为该仓库的.build/src/cli.mjs；不把Skill子目录当完整工具根，不自动更换已安装版本。工具接收显式路径和AI准备的内容，不调用模型或扫描业务系统。
+完整安装包的CLI为本Skill根目录下runtime/src/cli.mjs，安装方法见[安装说明](INSTALL.md)。开发时在已确认源码仓库运行npm run build，CLI为该仓库的.build/src/cli.mjs；源码Skill子目录不是完整安装包，不自动更换已安装版本。工具接收显式路径和AI准备的内容，不调用模型或扫描业务系统。
 
 validate检查当前文件；save使用expectedSnapshotSha256。覆盖未由干净Git保存的旧文件需给库外backupDir。中断先recover查看，再按精确transactionId完成prepared文件事务；外部改动不无条件覆盖，恢复不等于重放业务操作。
 

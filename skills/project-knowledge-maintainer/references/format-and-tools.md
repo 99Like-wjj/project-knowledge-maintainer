@@ -1,6 +1,6 @@
 # 格式v3与本地工具
 
-源码在明确仓库运行npm run build后使用绝对路径下.build/src/cli.mjs。用户提供任务和资料，AI准备JSON请求；构建不更新已安装Skill。
+正式安装包使用Skill根目录下runtime/src/cli.mjs的绝对路径。源码开发在明确仓库运行npm run build后使用绝对路径下.build/src/cli.mjs。用户提供任务和资料，AI准备JSON请求；构建不更新已安装Skill。
 
 ~~~text
 node ABS_CLI init --knowledge-root ABS --request ABS_JSON
@@ -52,4 +52,4 @@ save字段为projectId、knowledgeId、expectedSnapshotSha256、files、reason�
 
 recover默认只查看，按精确transactionId完成同一prepared事务；外部改动先保留和核实。compare只读明确的完整本地base/ours/theirs提交，按稳定ID返回差异/冲突；自由属性原样比较，AI判断业务含义。不执行Git合并、远端同步或按时间戳选胜者。
 
-当前只支持v3，不读旧格式、不双写、不转换。外部Schema是格式源；修改后运行schema:write生成运行Schema，并用schema:check核对。示例均在examples/knowledge.synthetic且完全合成。
+当前只支持v3，不读旧格式、不双写、不转换。外部Schema是格式源；修改后运行schema:write生成运行Schema，并用schema:check核对。源码仓库示例均在examples/knowledge.synthetic且完全合成；安装包不包含示例或设计文档。
