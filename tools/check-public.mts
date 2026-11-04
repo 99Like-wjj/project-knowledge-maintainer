@@ -5,7 +5,7 @@ import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {checkSecrets} from '../src/contract.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..'),errors:string[]=[],files:string[]=[];
-const roots=new Set(['README.md','README.en.md','CHANGELOG.md','AGENTS.md','.gitignore','.gitattributes','package.json','package-lock.json','tsconfig.json','docs','src','skills','schemas','examples','tests','tools']);
+const roots=new Set(['LICENSE','README.md','README.en.md','CHANGELOG.md','AGENTS.md','.gitignore','.gitattributes','package.json','package-lock.json','tsconfig.json','docs','src','skills','schemas','examples','tests','tools']);
 // User-approved public contact image, copied byte-for-byte from the Ego Skill repository.
 // Any replacement requires a fresh review; other binary files remain disallowed.
 const approvedContactImage={path:'docs/images/wechat-contact-qr.png',sha256:'2031e10caed00aeb08939aa2ec6586a357e963621d284f4de252889a8ee7e5e4'};

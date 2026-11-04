@@ -11,4 +11,5 @@ Requires Node.js >=22 and Git for local snapshots/comparison. No npm runtime dep
 Verify the ZIP against SHA256SUMS, then extract the entire directory into your AI client's supported Skills location. Do not copy SKILL.md alone or overwrite an existing installation. Run node ABS_SKILL/runtime/src/cli.mjs --help. Keep real project data outside the installation and source repository.
 
 包内manifest.json记录版本、知识格式和每个载荷文件的SHA-256。包不含模型、设计文档、测试、示例知识或真实资料。
-No open-source license is declared. Public access to this repository does not grant a general redistribution license.
+本项目采用 MIT 许可证。新构建的安装包根目录包含 LICENSE；复制或再分发时保留其中的版权与许可声明。已发布的原版 v0.1.0 ZIP 保持不变，许可证另见该 Release 的 LICENSE 附件。
+This project uses the MIT License. New installation builds include LICENSE at the package root; retain its copyright and permission notices when copying or redistributing. The original published v0.1.0 ZIP is unchanged; its license is provided separately as the Release LICENSE attachment.

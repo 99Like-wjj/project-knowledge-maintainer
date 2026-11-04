@@ -13,12 +13,14 @@
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "test": "npm run build && node --test .build/tests/*.test.mjs",
     "check:public": "npm run build && node .build/tools/check-public.mjs",
-    "package": "npm run build && python3 tools/package-release.py"
+    "package": "npm run build && python3 tools/package-release.py",
+    "test:package": "npm run build && python3 -B -m unittest discover -s tests -p '*_test.py'"
   },
   "devDependencies": {
     "@types/node": "22.20.5",
     "ajv": "^8.20.0",
     "ajv-formats": "^3.0.1",
     "typescript": "6.0.3"
-  }
+  },
+  "license": "MIT"
 }

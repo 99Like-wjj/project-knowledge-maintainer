@@ -53,7 +53,7 @@ Read [AGENTS.md](AGENTS.md) before starting any work.
 
 Requires Node.js >=22. Run `npm ci` and `npm run build` in this source repository. The CLI is at `.build/src/cli.mjs`. Users describe their goals and provide sources in natural language; AI prepares tool requests. Users do not need to hand-write JSON.
 
-See the format guide for initialization, validation, saving, three-way comparison, and recovery commands. Run `npm run typecheck`, `npm test`, `npm run check:public`, and `git diff --check` for development checks. See [release and installation instructions](docs/releasing.md) and [CHANGELOG](CHANGELOG.md). No open-source license is declared.
+See the format guide for initialization, validation, saving, three-way comparison, and recovery commands. Run `npm run typecheck`, `npm test`, `npm run check:public`, and `git diff --check` for development checks. See [release and installation instructions](docs/releasing.md) and [CHANGELOG](CHANGELOG.md). This project is licensed under the [MIT License](LICENSE).
 
 ## Versions and reading order
 

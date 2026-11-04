@@ -53,7 +53,7 @@
 
 Node.js >=22，在本源码仓库运行 npm ci、npm run build。CLI 位于本仓库的 .build/src/cli.mjs。用户以自然语言提供目标和资料，AI 准备工具请求，不需要用户手写 JSON。
 
-初始化、校验、保存、三方比较和恢复的命令见格式指南。自测运行 npm run typecheck、npm test、npm run check:public 和 git diff --check。完整安装包构建与安装方法见[发布说明](docs/releasing.md)，变更见[CHANGELOG](CHANGELOG.md)。本项目未声明开源许可证。
+初始化、校验、保存、三方比较和恢复的命令见格式指南。自测运行 npm run typecheck、npm test、npm run check:public 和 git diff --check。完整安装包构建与安装方法见[发布说明](docs/releasing.md)，变更见[CHANGELOG](CHANGELOG.md)。本项目采用 [MIT 许可证](LICENSE)。
 
 
 ## 版本与阅读顺序

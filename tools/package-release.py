@@ -32,6 +32,7 @@ def main():
     if any(p.exists() for p in (destination, archive, sums)):
         parser.error('refusing to overwrite existing release artifacts')
     sources = {name: skill / name for name in ('SKILL.md', 'INSTALL.md', 'references/format-and-tools.md')}
+    sources['LICENSE'] = ROOT / 'LICENSE'
     sources['schemas/project-knowledge.schema.json'] = ROOT / 'schemas/project-knowledge.schema.json'
     for name in MODULES:
         sources[f'runtime/src/{name}.mjs'] = ROOT / f'.build/src/{name}.mjs'
@@ -45,7 +46,7 @@ def main():
         file = destination / target
         file.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(source, file)
-    metadata = {'name': package['name'], 'version': version, 'private': True, 'type': 'module', 'engines': {'node': '>=22'}}
+    metadata = {'name': package['name'], 'version': version, 'private': True, 'license': package['license'], 'type': 'module', 'engines': {'node': '>=22'}}
     (destination / 'package.json').write_text(json.dumps(metadata, indent=2) + '\n')
     files = {str(p.relative_to(destination)): hashlib.sha256(p.read_bytes()).hexdigest()
              for p in sorted(destination.rglob('*')) if p.is_file()}
