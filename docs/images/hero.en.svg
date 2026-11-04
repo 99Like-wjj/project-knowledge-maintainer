@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" role="img" aria-labelledby="title desc">
+<title id="title">Project Knowledge Maintainer</title><desc id="desc">AI organizes authorized sources; tools maintain independent knowledge outside the repository; Ego reads it directly.</desc>
+<defs><linearGradient id="g"><stop stop-color="#61e6ed"/><stop offset="1" stop-color="#ae91ff"/></linearGradient><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#61e6ed"/></marker></defs>
+<rect width="1200" height="540" fill="#080e20"/>
+<path d="M0,2 H1200" stroke="url(#g)" stroke-width="4"/>
+<rect x="56" y="294" width="1088" height="150" rx="18" fill="#101b32" stroke="#293957"/>
+<g font-family="DejaVu Sans, Noto Sans CJK SC, sans-serif">
+<text x="54" y="64" font-size="19" fill="#61e6ed" font-weight="700">PROJECT KNOWLEDGE / CREATE &amp; MAINTAIN</text>
+<text x="54" y="136" font-size="48" fill="#f1f5ff" font-weight="700">From project sources</text>
+<text x="54" y="198" font-size="48" fill="#f1f5ff" font-weight="700">to maintainable knowledge.</text>
+<text x="56" y="246" font-size="20" fill="#9cacc8" font-weight="400">AI organizes and reasons. Tools validate and store. Knowledge stays independent.</text>
+<text x="82" y="332" font-size="16" fill="#61e6ed" font-weight="700">01  AUTHORIZED SOURCES</text>
+<text x="82" y="370" font-size="19" fill="#f1f5ff" font-weight="400">Sources and scope</text>
+<text x="82" y="403" font-size="17" fill="#9cacc8" font-weight="400">Do not invent missing facts</text>
+<text x="455" y="332" font-size="16" fill="#ae91ff" font-weight="700">02  CREATE &amp; MAINTAIN</text>
+<text x="455" y="370" font-size="19" fill="#f1f5ff" font-weight="400">Validate → Save → Compare</text>
+<text x="455" y="403" font-size="17" fill="#9cacc8" font-weight="400">Independent store; recovery tools</text>
+<text x="835" y="332" font-size="16" fill="#61e6ed" font-weight="700">03  TEST CONTEXT</text>
+<text x="835" y="370" font-size="23" fill="#f1f5ff" font-weight="400">Ego reads directly</text>
+<text x="835" y="403" font-size="17" fill="#9cacc8" font-weight="400">No query proxy in this Skill</text>
+<text x="56" y="498" font-size="16" fill="#9cacc8" font-weight="400">0.1.0-dev.3  /  In development, not released  ·  Real knowledge and source material stay outside this repository</text>
+</g>
+<g stroke="#61e6ed" stroke-width="2" fill="none" marker-end="url(#arrow)"><path d="M355,370 L420,370"/><path d="M755,370 L800,370"/></g>
+</svg>

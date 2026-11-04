@@ -1,6 +1,12 @@
-# project-knowledge-maintainer
+<p align="center"><img src="docs/images/hero.zh-CN.svg" alt="项目知识库创建与维护：AI 整理资料，工具校验保存，Ego 按需读取" width="100%"></p>
 
-独立、可跨项目复用的「项目知识库创建与维护 Skill」。
+<h1 align="center">项目知识库创建与维护 Skill</h1>
+
+<p align="center"><code>project-knowledge-maintainer</code></p>
+
+<p align="center"><a href="README.en.md">English</a> · <strong>简体中文</strong><br><a href="#开发使用">开发使用</a> · <a href="skills/project-knowledge-maintainer/SKILL.md">Skill 指南</a> · <a href="docs/project-knowledge-lightweight-design.md">知识结构</a> · <a href="skills/project-knowledge-maintainer/references/format-and-tools.md">格式与命令</a> · <a href="docs/development-validation.md">验证状态</a></p>
+
+**独立、可跨项目复用的项目知识库创建与维护 Skill。** AI 从授权资料中整理项目知识，工具负责初始化、校验、保存、比较与恢复；Ego 等使用方直接读取独立的知识库。
 
 > **当前为本地开发版 0.1.0-dev.3，知识格式 v3。** 已实现四类资料的初始化、校验、增量保存、prepared 事务恢复及本地 Git 三方差异；AI 负责资料整理和业务判断。尚未正式发布；见[开发自测](docs/development-validation.md)。
 
