@@ -1,0 +1,12 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+const root=process.cwd(),mode=process.argv[2];
+if(!['--write','--check'].includes(mode??''))throw new Error('Use --write or --check from the source root.');
+const pkg=JSON.parse(await fs.readFile(path.join(root,'package.json'),'utf8')) as {name:string};
+if(pkg.name!=='project-knowledge-maintainer')throw new Error('Expected project-knowledge-maintainer source root.');
+const schema:unknown=JSON.parse(await fs.readFile(path.join(root,'schemas/project-knowledge.schema.json'),'utf8'));
+const generated='/* Generated from schemas/project-knowledge.schema.json; use npm run schema:write. */\nexport default '+JSON.stringify(schema,null,2)+' as const;\n';
+const target=path.join(root,'src/schema.generated.mts');
+if(mode==='--write')await fs.writeFile(target,generated,'utf8');
+else if(await fs.readFile(target,'utf8')!==generated)throw new Error('Knowledge schema runtime drift.');
+process.stdout.write('Knowledge runtime schema '+(mode==='--write'?'generated':'verified')+'.\n');

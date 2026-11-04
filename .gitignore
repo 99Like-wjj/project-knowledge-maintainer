@@ -18,3 +18,5 @@ credentials.json
 service-account*.json
 .DS_Store
 __pycache__/
+node_modules/
+.build/

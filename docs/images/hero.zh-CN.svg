@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" role="img" aria-labelledby="title desc">
+<title id="title">项目知识库创建与维护</title><desc id="desc">AI 整理授权资料，工具创建和维护库外知识，Ego 按需直接读取。</desc>
+<defs><linearGradient id="g"><stop stop-color="#61e6ed"/><stop offset="1" stop-color="#ae91ff"/></linearGradient><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#61e6ed"/></marker></defs>
+<rect width="1200" height="540" fill="#080e20"/>
+<path d="M0,2 H1200" stroke="url(#g)" stroke-width="4"/>
+<rect x="56" y="294" width="1088" height="150" rx="18" fill="#101b32" stroke="#293957"/>
+<g font-family="DejaVu Sans, Noto Sans CJK SC, sans-serif">
+<text x="54" y="64" font-size="19" fill="#61e6ed" font-weight="700">项目知识库 / 创建与维护</text>
+<text x="54" y="136" font-size="48" fill="#f1f5ff" font-weight="700">把项目资料，</text>
+<text x="54" y="198" font-size="48" fill="#f1f5ff" font-weight="700">变成可维护的知识。</text>
+<text x="56" y="246" font-size="20" fill="#9cacc8" font-weight="400">AI 整理与判断，工具维护结构，知识独立复用</text>
+<text x="82" y="332" font-size="16" fill="#61e6ed" font-weight="700">01  整理授权资料</text>
+<text x="82" y="370" font-size="23" fill="#f1f5ff" font-weight="400">来源、范围与待确认项</text>
+<text x="82" y="403" font-size="17" fill="#9cacc8" font-weight="400">资料不足时不编造事实</text>
+<text x="455" y="332" font-size="16" fill="#ae91ff" font-weight="700">02  创建与维护</text>
+<text x="455" y="370" font-size="23" fill="#f1f5ff" font-weight="400">校验 → 保存 → 比较</text>
+<text x="455" y="403" font-size="17" fill="#9cacc8" font-weight="400">独立知识目录，支持事务恢复</text>
+<text x="835" y="332" font-size="16" fill="#61e6ed" font-weight="700">03  提供测试上下文</text>
+<text x="835" y="370" font-size="23" fill="#f1f5ff" font-weight="400">Ego 按需直接读取</text>
+<text x="835" y="403" font-size="17" fill="#9cacc8" font-weight="400">不经维护 Skill 代理查询</text>
+<text x="56" y="498" font-size="16" fill="#9cacc8" font-weight="400">版本 0.1.0  /  正式版  ·  真实知识与原始资料留在仓库外</text>
+</g>
+<g stroke="#61e6ed" stroke-width="2" fill="none" marker-end="url(#arrow)"><path d="M355,370 L420,370"/><path d="M755,370 L800,370"/></g>
+</svg>

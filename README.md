@@ -1,14 +1,33 @@
-# project-knowledge-maintainer
+<p align="center"><img src="docs/images/hero.zh-CN.svg" alt="项目知识库创建与维护：AI 整理资料，工具校验保存，Ego 按需读取" width="100%"></p>
 
-独立、可跨项目复用的「项目知识库创建与维护 Skill」。
+<h1 align="center">项目知识库创建与维护 Skill</h1>
 
-> **当前仅为仓库骨架。Skill 尚未可执行；没有实现创建、维护、校验、查询或安装能力，也未完成联通验收。**
+<p align="center"><code>project-knowledge-maintainer</code></p>
+
+<p align="center"><a href="README.en.md">English</a> · <strong>简体中文</strong><br><a href="#安装与开发使用">安装与开发使用</a> · <a href="skills/project-knowledge-maintainer/SKILL.md">Skill 指南</a> · <a href="docs/project-knowledge-lightweight-design.md">知识结构</a> · <a href="skills/project-knowledge-maintainer/references/format-and-tools.md">格式与命令</a> · <a href="docs/development-validation.md">验证状态</a></p>
+
+**独立、可跨项目复用的项目知识库创建与维护 Skill。** AI 从授权资料中整理项目知识，工具负责初始化、校验、保存、比较与恢复；Ego 等使用方直接读取独立的知识库。
+
+> **当前正式版本 0.1.0，知识格式 v3。** 已实现四类资料的初始化、校验、增量保存、prepared 事务恢复及本地 Git 三方差异；AI 负责资料整理和业务判断。验证记录见[正式版验证](docs/v0.1.0-release-validation.md)。
 
 ## 定位
 
-计划从用户授权提供的项目资料出发，创建并增量维护独立的项目知识资产，保留来源、适用范围、冲突和待确认信息。不同项目的知识必须隔离；资料不足时说明缺口，不编造事实。
+从用户授权提供的项目资料出发，由当前 AI 初始化并维护独立的项目知识资产，重点提炼项目内通用规则与导航，并轻量登记用户提供的账号和项目配置；功能只保留轻量索引，不逐功能录入细化需求。规则与导航保留来源、适用范围及确认状态；配置只整理用户提供的信息，不预设业务属性或注册表。不同项目的知识隔离；资料不足时可创建空库或部分知识，不编造事实。
 
 本项目负责知识的创建与维护。Ego Lite 等使用方负责直接读取、查询和使用知识产物，不要求测试时调用本 Skill。本项目不承接 Ego Lite 的通用测试经验优化或运行时查询实现。
+
+## 与 Ego 配合使用
+
+本项目是 **创建与维护端**，[AI 自主自动化测试 · Ego Lite](https://github.com/99Like-wjj/ai-autonomous-testing-ego-lite) 是 **读取与测试端**。当前仓库为私有仓库，需要已获授权的 GitHub 账号访问。
+
+![维护端、独立知识资产与 Ego 的协作](docs/images/knowledge-collaboration.svg)
+
+1. 用户提供资料和明确的库外知识目录，维护 AI 判断哪些项目通用知识值得保留，再调用本地工具初始化、校验和保存。
+2. 独立知识目录采用共享格式 v3，包含功能地图、项目通用规则、非秘密账号配置和项目配置，以及身份与来源信息；不是两个 Skill 的安装目录。
+3. 测试 AI 按任务让 Ego 直接查询和读取相关知识，再结合通用测试经验与当次需求设计、执行和判断。运行时不经维护 Skill 代理查询。
+4. 新资料或差异需要维护时，回到维护流程核实来源和适用范围；测试观察不自动覆盖已确认规则。
+
+“通用测试经验”属于 Ego；只对某个项目适用的规则、导航和配置属于该项目知识库。没有资料可以先建空库，结构校验通过不代表业务知识完整或正确。
 
 ## 最重要的约束
 
@@ -19,13 +38,32 @@
 ## 目录
 
 - [AGENTS.md](AGENTS.md)：隐私红线、提交检查与开发边界。
-- [Skill 入口草案](skills/project-knowledge-maintainer/SKILL.md)：用途与尚未实现的边界。
+- [Skill 入口](skills/project-knowledge-maintainer/SKILL.md)：AI 使用方式、通用知识筛选和操作边界。
 - [范围与开发交接](docs/scope.md)：目标、非目标和后续验收方向。
-- [数据约定讨论稿](docs/data-contract-draft.md)：待共同设计的语义，不是正式 schema。
-- [示例说明](examples/README.md)：仅预留完全合成示例。
+- [数据规范v3](docs/project-knowledge-lightweight-design.md)、[JSON Schema](schemas/project-knowledge.schema.json)：四类资料、共用元数据和外部字段；[历史v1草稿](docs/data-contract-draft.md)保留为设计历史。
+- [v0.1.9 知识维护设计](docs/v0.1.9-requirements-and-design.md)：v1 阶段设计历史；当前格式和行为以 v3 设计、运行指南及源码为准。
+- [初始化与首次建库设计](docs/initialization-and-first-build-design.md)：初始化意图与历史设计，文首先列出当前 v3 实现差异。
+- [Ego 知识使用与检索设计（当前 v3）](https://github.com/99Like-wjj/ai-autonomous-testing-ego-lite/blob/f437c64/docs/project-knowledge-lightweight-integration-design.md)：使用方负责的按业务查询及测试接入，正文位于 Ego 项目。
+- [Ego 现状核对](https://github.com/99Like-wjj/ai-autonomous-testing-ego-lite/blob/f437c64/docs/v0.1.9-current-state-review.md)：使用方源码与通用经验审核依据。
+- [示例说明](examples/README.md)：完全合成知识和原始资料，非真实业务证据。
+- [格式与本地命令](skills/project-knowledge-maintainer/references/format-and-tools.md)：请求、保存与恢复方法。
+- [开发自测](docs/development-validation.md)：实际验证结果及限制。
 
-## 下一步
+## 安装与开发使用
 
-先确认最小存储方案、项目隔离方式及与使用方的数据约定，再设计创建与增量维护流程。之后使用完全合成资料验证创建、更新及使用方读取的完整链路。
+Node.js >=22，在本源码仓库运行 npm ci、npm run build。CLI 位于本仓库的 .build/src/cli.mjs。用户以自然语言提供目标和资料，AI 准备工具请求，不需要用户手写 JSON。
 
-当前不预设数据库、向量库、独立服务、具体文件格式或安装分发方案；不提供可运行命令、依赖、发布版本或许可证声明。
+初始化、校验、保存、三方比较和恢复的命令见格式指南。自测运行 npm run typecheck、npm test、npm run check:public 和 git diff --check。完整安装包构建与安装方法见[发布说明](docs/releasing.md)，变更见[CHANGELOG](CHANGELOG.md)。本项目未声明开源许可证。
+
+
+## 版本与阅读顺序
+
+维护 Skill 自身版本为 **0.1.0**，与 Ego **v0.1.9** 配合开发；数据契约版本为 **v3**。三者不是同一个版本号。安装请使用 Release 附件中的完整 ZIP，不要仅复制源码 Skill 子目录。
+
+| 开发阶段 | 主要变化 | 状态 |
+| --- | --- | --- |
+| 0.1.0 / 格式 v3 | 四类资料中的账号和项目配置改为轻量记录 | 正式版本 |
+| 0.1.0-dev.2 / 格式 v2 | 四类知识布局与维护、读取契约 | 历史设计与验证记录 |
+| 0.1.0-dev.1 / 格式 v1 | 通用主题知识、初始化、增量维护和三方差异 | 历史设计与验证记录 |
+
+当前使用先读 Skill 入口和格式与工具指南；开发再读 v3 设计及 Schema。历史文档保留当时事实，不用于生成旧格式或推断当前发布状态。当前只支持 v3，不自动迁移旧格式。
