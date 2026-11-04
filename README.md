@@ -18,7 +18,7 @@
 
 ## 与 Ego 配合使用
 
-本项目是 **创建与维护端**，[AI 自主自动化测试 · Ego Lite](https://github.com/99Like-wjj/ai-autonomous-testing-ego-lite) 是 **读取与测试端**。当前仓库为私有仓库，需要已获授权的 GitHub 账号访问。
+本项目是 **创建与维护端**，[AI 自主自动化测试 · Ego Lite](https://github.com/99Like-wjj/ai-autonomous-testing-ego-lite) 是 **读取与测试端**。本仓库公开提供通用 Skill 定义、工具和合成示例，真实项目知识仍保存在仓库外。
 
 ![维护端、独立知识资产与 Ego 的协作](docs/images/knowledge-collaboration.svg)
 
@@ -67,3 +67,15 @@ Node.js >=22，在本源码仓库运行 npm ci、npm run build。CLI 位于本�
 | 0.1.0-dev.1 / 格式 v1 | 通用主题知识、初始化、增量维护和三方差异 | 历史设计与验证记录 |
 
 当前使用先读 Skill 入口和格式与工具指南；开发再读 v3 设计及 Schema。历史文档保留当时事实，不用于生成旧格式或推断当前发布状态。当前只支持 v3，不自动迁移旧格式。
+
+## 问题反馈与联系
+
+欢迎通过 [GitHub Issues](https://github.com/99Like-wjj/project-knowledge-maintainer/issues) 或以下联系方式反馈问题、提出建议。请附上版本号、复现步骤和脱敏后的报错或截图，不要提交真实项目知识、原始业务资料、密码、令牌、密钥或公司内部资料。
+
+- 作者：[99Like-wjj](https://github.com/99Like-wjj)
+- 邮箱：[wjj990517@gmail.com](mailto:wjj990517@gmail.com)
+- 微信：A2326543144
+
+  <img src="docs/images/wechat-contact-qr.png" alt="作者的微信联系二维码" width="240">
+- QQ：2326543144
+- X：[@99Like_ovo](https://x.com/99Like_ovo)

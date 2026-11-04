@@ -18,7 +18,7 @@ This project creates and maintains knowledge. Consumers such as Ego Lite read, q
 
 ## Working with Ego
 
-This project is the **creation and maintenance side**; [AI Autonomous Testing · Ego Lite](https://github.com/99Like-wjj/ai-autonomous-testing-ego-lite) is the **reading and testing side**. This repository is private and requires an authorized GitHub account.
+This project is the **creation and maintenance side**; [AI Autonomous Testing · Ego Lite](https://github.com/99Like-wjj/ai-autonomous-testing-ego-lite) is the **reading and testing side**. This public repository provides generic Skill definitions, tools, and synthetic examples; real project knowledge remains outside the repository.
 
 ![Maintenance Skill, independent knowledge store, and Ego collaboration (Chinese diagram)](docs/images/knowledge-collaboration.svg)
 
@@ -66,3 +66,15 @@ The maintenance Skill's own version is **0.1.0**, developed alongside Ego **v0.1
 | 0.1.0-dev.1 / format v1 | General topic knowledge, initialization, incremental maintenance, and three-way comparison | Historical design and validation records |
 
 For current use, start with the Skill entry point and the formats and tools guide. For development, read the v3 design and Schema next. Historical documents preserve facts from their time; do not use them to generate older formats or infer current release status. Only v3 is currently supported; older formats are not migrated automatically.
+
+## Feedback and contact
+
+Report bugs or suggest improvements through [GitHub Issues](https://github.com/99Like-wjj/project-knowledge-maintainer/issues) or the contacts below. Include the version, reproduction steps, and redacted errors or screenshots. Do not submit real project knowledge, original business materials, passwords, tokens, keys, or confidential company information.
+
+- Author: [99Like-wjj](https://github.com/99Like-wjj)
+- Email: [wjj990517@gmail.com](mailto:wjj990517@gmail.com)
+- WeChat: A2326543144
+
+  <img src="docs/images/wechat-contact-qr.png" alt="Author's WeChat contact QR code" width="240">
+- QQ: 2326543144
+- X: [@99Like_ovo](https://x.com/99Like_ovo)
