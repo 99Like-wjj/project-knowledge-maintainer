@@ -4,7 +4,7 @@
 
 日期：2026-11-02。**设计已确认并形成格式 v1 实现。** 外部契约源为 [JSON Schema](../schemas/project-knowledge.schema.json)，精确字段及工具请求见[运行指南](../skills/project-knowledge-maintainer/references/format-and-tools.md)；运行时另校验跨文件引用、来源和变更依据。沿用原设计文件名，本文是双方共享的语义说明。
 
-维护方法见[维护设计](v0.1.9-requirements-and-design.md)和[初始化与首次建库设计](initialization-and-first-build-design.md)，读取方法见 Ego 的[使用与检索设计](../../ai-autonomous-testing-ego-lite/docs/v0.1.9-project-knowledge-use-design.md)。本约定负责知识文件的含义，不规定团队必须使用何种分支审批流程。
+维护方法见[维护设计](v0.1.9-requirements-and-design.md)和[初始化与首次建库设计](initialization-and-first-build-design.md)，读取方法见 Ego 的[使用与检索设计](https://github.com/99Like-wjj/ai-autonomous-testing-ego-lite/blob/f437c64/docs/v0.1.9-project-knowledge-use-design.md)。本约定负责知识文件的含义，不规定团队必须使用何种分支审批流程。
 
 ## 1. 文件布局与最小信息
 

@@ -1,5 +1,15 @@
 # 项目知识库初始化与首次建库设计
 
+> **历史设计（v1 阶段）**：下文保留 2026-11-02 的设计背景，`topics/`、`scopes` 等不是当前 v3 文件布局。当前维护端为 0.1.0-dev.3，采用[轻量 v3 设计](project-knowledge-lightweight-design.md)、[运行指南](../skills/project-knowledge-maintainer/references/format-and-tools.md)及 [Schema](../schemas/project-knowledge.schema.json)。历史状态和验收目标不能当作当前发布或验证结论。
+
+## 当前 v3 初始化行为
+
+`src/writer.mts` 的 `initialize` 仅要求 `projectName`，可显式传入 `projectId`、`allowExistingDirectory`、`protectedRoots`。新建时写入 `knowledge.json` 和内容为 `{"items":[]}` 的 `project.json`；不会生成 `topics/`、`scopes`、虚构账号或规则。功能地图、账号、规则与来源文件按需通过维护流程写入。已有合法库会检查身份并复用，不覆盖原内容。空库是结构有效的起点，不代表业务资料已就绪。
+
+初始化不提供整库事务：若身份已写入但后续步骤失败，必须报告实际状态并核对，不能宣称全部成功或直接覆盖重建。增量保存的 prepared 事务恢复是另一项能力，具体见运行指南。
+
+## 以下为历史正文
+
 日期：2026-11-02。状态：**设计已确认，进入本地开发自测**。本文属于知识维护项目，细化[维护方案](v0.1.9-requirements-and-design.md)的创建能力；数据含义以[共享约定](data-contract-draft.md)为准。实际完成与检查范围见[开发自测](development-validation.md)。
 
 ## 1. 三种使用意图

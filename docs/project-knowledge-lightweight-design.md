@@ -2,7 +2,7 @@
 
 日期：2026-11-03。状态：**设计已批准；已实现格式v3并完成合成自测，未安装或发布。** 更新：2026-11-04。
 
-本方案修订[四类知识v2设计](v0.1.9-project-knowledge-v2-detailed-design.md)。本文只定义维护Skill的职责和共用格式；Ego的读取与使用见[使用方方案](../../ai-autonomous-testing-ego-lite/docs/project-knowledge-lightweight-integration-design.md)。示例完全合成，不来源于任何真实项目。
+本方案修订[四类知识v2设计](v0.1.9-project-knowledge-v2-detailed-design.md)。本文只定义维护Skill的职责和共用格式；Ego的读取与使用见[使用方方案](https://github.com/99Like-wjj/ai-autonomous-testing-ego-lite/blob/f437c64/docs/project-knowledge-lightweight-integration-design.md)。示例完全合成，不来源于任何真实项目。
 
 ## 1. 目标和范围
 
