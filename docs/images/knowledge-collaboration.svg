@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
-<title id="title">项目知识维护与 Ego 测试协作</title><desc id="desc">维护 AI 创建和维护独立的格式 v3 知识资产，Ego 直接读取知识并结合通用测试经验。测试差异需核实，不自动改写规则。</desc>
+<title id="title">项目知识维护与 Ego 测试协作</title><desc id="desc">维护 AI 创建和维护独立的项目知识库，Ego 直接读取知识并结合通用测试经验。测试差异需核实，不自动改写规则。</desc>
 <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10" fill="none" stroke="#65d8e8" stroke-width="2"/></marker></defs>
 <rect width="1200" height="620" rx="24" fill="#0c1930"/>
 <g font-family="Noto Sans CJK SC, sans-serif" fill="#edf7ff">
 <text x="50" y="58" font-size="30" font-weight="700">AI 判断业务，工具维护结构，知识独立复用</text>
-<text x="50" y="94" font-size="17" fill="#afc7df">维护端 0.1.0-dev.3 · 共享格式 v3 · Ego v0.1.9 开发协作</text>
+<text x="50" y="94" font-size="17" fill="#afc7df">维护端 0.1.0-dev.3 · 项目知识库 · Ego v0.1.9 开发协作</text>
 <g stroke="#355c80" stroke-width="2" fill="#142b46"><rect x="45" y="145" width="310" height="245" rx="18"/><rect x="445" y="145" width="310" height="245" rx="18"/><rect x="845" y="145" width="310" height="245" rx="18"/></g>
-<g font-size="22" font-weight="700"><text x="70" y="185">知识库维护 Skill</text><text x="470" y="185">独立项目知识资产</text><text x="870" y="185">Ego 测试 Skill</text></g>
+<g font-size="22" font-weight="700"><text x="70" y="185">知识库维护 Skill</text><text x="470" y="185">项目知识库</text><text x="870" y="185">Ego 测试 Skill</text></g>
 <g font-size="17" fill="#c7dded">
 <text x="70" y="228">用户提供资料与库外目录</text><text x="70" y="262">AI 筛选、核实与更新知识</text><text x="70" y="296">工具：初始化 / 校验 / 保存</text><text x="70" y="330">三方差异 / prepared 恢复</text><text x="70" y="364">不承担测试时查询服务</text>
-<text x="470" y="228">功能地图 + 项目通用规则</text><text x="470" y="262">非秘密账号 + 项目配置</text><text x="470" y="296">统一 JSON 格式 v3</text><text x="470" y="330">身份、来源、状态与引用</text><text x="470" y="364">存放在两个 Skill 仓库之外</text>
+<text x="470" y="228">功能地图 + 项目通用规则</text><text x="470" y="262">非秘密账号 + 项目配置</text><text x="470" y="296">统一 JSON 数据格式</text><text x="470" y="330">身份、来源、状态与引用</text><text x="470" y="364">存放在两个 Skill 仓库之外</text>
 <text x="870" y="228">按任务直接查询和读取</text><text x="870" y="262">结合当次需求与测试经验</text><text x="870" y="296">AI 自主设计、执行与判断</text><text x="870" y="330">通用测试方法归 Ego</text><text x="870" y="364">不经维护端代理读取</text>
 </g>
 <g stroke="#65d8e8" stroke-width="3" fill="none" marker-end="url(#arrow)"><path d="M360 265H430"/><path d="M760 265H830"/></g>
