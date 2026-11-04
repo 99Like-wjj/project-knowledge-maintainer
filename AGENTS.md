@@ -30,10 +30,15 @@
 
 ## 当前开发边界
 
-- 当前仅建立文档骨架，Skill 尚未可执行。不要把计划写成已实现，也不要把未运行的验证写成通过。
-- 未经后续任务授权，不添加功能实现、依赖、CI、发布版本、部署、许可证或正式数据 schema。
+源码导航：src/contract.mts 为格式和跨文件语义校验；src/store.mts 为本地文件/Git 快照；src/writer.mts 为初始化、保存和恢复；src/changes.mts 为三方差异；src/cli.mts 为入口。schemas 是外部契约源，skills 是 AI 指南，tests/examples 仅含合成内容，tools/interop-smoke.mts 仅用于开发联通验证。运行 npm run typecheck、npm test、npm run check:public、git diff --check；不将常规编译当作候选安装包交付。
+
+schemas/project-knowledge.schema.json 是格式源；src/schema.generated.mts 由 tools/generate-schema.mts 生成，不直接编辑。改Schema后运行 npm run schema:write，并用 npm run schema:check 核对，随后同步使用方的确定副本。
+
+- 用户已于 2026-11-02 确认设计并授权开发自测；当前处于本地开发，尚未发布。不要把未实现能力或未运行验证写成通过。
+- 本次授权覆盖初始化、通用知识维护、共享规范和与 Ego 的联通自测；不据此创建 CI、部署、许可证、安装分发产物或正式发布版本。
 - 本仓库负责跨项目知识创建和维护；Ego Lite 等使用方负责运行时读取、查询与使用。不在此实现测试查询服务或修改对方项目。
 - 保持轻量。具体存储格式、字段、状态名、标识和兼容规则须先与使用方共同设计。
+- 本项目处于持续优化阶段，设计和开发优先依据当前目标选择最优结构，默认无需兼容旧格式或旧有资源；不增加旧格式兜底读取、双轨读写、转换器或资源映射流程，除非用户当次明确要求兼容。后续知识文件可由 AI 按新格式直接生成。此原则不授权删除或覆盖现有资料及历史记录；格式变化仍须说明影响。
 
 ## 知识可信度与操作授权
 
